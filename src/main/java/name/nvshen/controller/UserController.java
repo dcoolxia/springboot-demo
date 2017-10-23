@@ -37,7 +37,7 @@ public class UserController {
     //查询一个
     @RequestMapping(value = "/findOne/{id}", method = { RequestMethod.GET, RequestMethod.POST })
     public User findOne(@PathVariable("id") int id) {
-        return userDao.findOne(id);
+        return userService.findOne(id);
     }
     
     //通过年龄查询
